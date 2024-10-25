@@ -43,7 +43,7 @@ infospot2.addEventListener('click', function() {
 })
 panoramaImage.add(infospot2);
 
-const infospot3 = new PANOLENS.Infospot(400, '../../Bilder/Symbols/logos_vereine_tg_bockhorst_500px.png');
+const infospot3 = new PANOLENS.Infospot(400, '../../Bilder/Symbols/Logos_Vereine_TG_Bockhorst_500px.png');
 infospot3.position.set(3000, 400, 3000);
 infospot3.addHoverText("Sportplatz", 70);
 infospot3.addEventListener('click', function() {
