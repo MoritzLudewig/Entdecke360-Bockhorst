@@ -30,7 +30,7 @@ const infospot = new PANOLENS.Infospot(500, '../../Bilder/Symbols/versmoldWappen
 infospot.position.set(-4000, 500, -6000);
 infospot.addHoverText("Versmold", 50);
 infospot.addEventListener('click', function() {
-    window.open('../../orte/Versmold/index.html', '_self');
+    window.open('../../Orte/Versmold/index.html', '_self');
 })
 panoramaImage.add(infospot);
 
@@ -38,7 +38,7 @@ const infospot2 = new PANOLENS.Infospot(400);
 infospot2.position.set(4000, 0, 0);
 infospot2.addHoverText("Überblick", 50);
 infospot2.addEventListener('click', function() {
-    window.open('../../orte/Ueberblick/index.html', '_self');
+    window.open('../../Orte/Ueberblick/index.html', '_self');
 })
 panoramaImage.add(infospot2);
 
@@ -46,6 +46,6 @@ const infospot3 = new PANOLENS.Infospot(300);
 infospot3.position.set(4000, -800, -800);
 infospot3.addHoverText("Zentrum", 50);
 infospot3.addEventListener('click', function() {
-    window.open('../../orte/Zentrum/index.html', '_self');
+    window.open('../../Orte/Zentrum/index.html', '_self');
 })
 panoramaImage.add(infospot3);

@@ -30,7 +30,7 @@ const infospot = new PANOLENS.Infospot(500);
 infospot.position.set(-6000, 500, 0);
 infospot.addHoverText("Bockhorst", 60);
 infospot.addEventListener('click', function() {
-    window.open('../../orte/Ueberblick/index.html', '_self');
+    window.open('../../Orte/Ueberblick/index.html', '_self');
 })
 panoramaImage.add(infospot);
 

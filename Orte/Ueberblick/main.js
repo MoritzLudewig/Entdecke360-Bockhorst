@@ -30,7 +30,7 @@ const infospot = new PANOLENS.Infospot(500, '../../Bilder/Symbols/versmoldWappen
 infospot.position.set(-4000, 500, -6000);
 infospot.addHoverText("Versmold", 60);
 infospot.addEventListener('click', function() {
-    window.open('../../orte/Versmold/index.html', '_self');
+    window.open('../../Orte/Versmold/index.html', '_self');
 })
 panoramaImage.add(infospot);
 
@@ -38,7 +38,7 @@ const infospot2 = new PANOLENS.Infospot(500, '../../Bilder/Symbols/logos_vereine
 infospot2.position.set(7000, 200, -500);
 infospot2.addHoverText("Sportplatz", 60);
 infospot2.addEventListener('click', function() {
-    window.open('../../orte/sportplatz/index.html', '_self');
+    window.open('../../Orte/sportplatz/index.html', '_self');
 })
 panoramaImage.add(infospot2);
 
@@ -46,7 +46,7 @@ const infospot3 = new PANOLENS.Infospot(500);
 infospot3.position.set(-7000, 200, 500);
 infospot3.addHoverText("Blick aus Westen", 60);
 infospot3.addEventListener('click', function() {
-    window.open('../../orte/VonWesten/index.html', '_self');
+    window.open('../../Orte/VonWesten/index.html', '_self');
 })
 panoramaImage.add(infospot3);
 
@@ -54,6 +54,6 @@ const infospot4 = new PANOLENS.Infospot(500);
 infospot4.position.set(7000, -4000, -3000);
 infospot4.addHoverText("Zentrum", 60);
 infospot4.addEventListener('click', function() {
-    window.open('../../orte/Zentrum/index.html', '_self');
+    window.open('../../Orte/Zentrum/index.html', '_self');
 })
 panoramaImage.add(infospot4);
