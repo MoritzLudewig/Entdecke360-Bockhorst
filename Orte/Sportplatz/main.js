@@ -34,7 +34,7 @@ infospot.addEventListener('click', function() {
 })
 panoramaImage.add(infospot);
 
-const infospot2 = new PANOLENS.Infospot(500, '../../Bilder/Symbols/logos_vereine_tg_bockhorst_500px.png');
+const infospot2 = new PANOLENS.Infospot(500, '../../Bilder/Symbols/Logos_Vereine_TG_Bockhorst_500px.png');
 infospot2.position.set(-2000, -2000, 2000);
 infospot2.addHoverText("TG Bockhorst", 100);
 infospot2.addEventListener('click', function() {
