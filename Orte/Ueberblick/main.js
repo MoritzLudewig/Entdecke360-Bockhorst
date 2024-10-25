@@ -34,11 +34,11 @@ infospot.addEventListener('click', function() {
 })
 panoramaImage.add(infospot);
 
-const infospot2 = new PANOLENS.Infospot(500, '../../Bilder/Symbols/logos_vereine_tg_bockhorst_500px.png');
+const infospot2 = new PANOLENS.Infospot(500, '../../Bilder/Symbols/Logos_Vereine_TG_Bockhorst_500px.png');
 infospot2.position.set(7000, 200, -500);
 infospot2.addHoverText("Sportplatz", 60);
 infospot2.addEventListener('click', function() {
-    window.open('../../Orte/sportplatz/index.html', '_self');
+    window.open('../../Orte/Sportplatz/index.html', '_self');
 })
 panoramaImage.add(infospot2);
 
