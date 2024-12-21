@@ -10,6 +10,9 @@ const viewer = new PANOLENS.Viewer({
 
 viewer.add(panoramaImage);
 
+panoramaImage.addEventListener('load', () => {
+    viewer.tweenControlCenter(new THREE.Vector3(6000, -1000, 3000),0);
+});
 
 /*Menu*/
 
@@ -50,3 +53,23 @@ infospot3.addEventListener('click', function() {
     window.open('../../Orte/Sportplatz/index.html', '_self');
 })
 panoramaImage.add(infospot3);
+
+
+
+// Funktion zur Überprüfung des Blickwinkels
+function checkInfospotVisibility() {
+    const cameraDirection = viewer.getCamera().getWorldDirection(new THREE.Vector3());
+    const infospotDirection = infospot.position.clone().normalize();
+
+    // Winkel zwischen Kamera und Infospot berechnen
+    const angle = cameraDirection.angleTo(infospotDirection);
+
+    // Wenn der Winkel kleiner als 10 Grad (in Radiant) ist, zeige den Text an
+    if (angle < (10 * Math.PI) / 180) { // 10° in Radiant
+        infospot.show(); // Zeigt den Infospot-Text an
+    } else {
+        infospot.hide(); // Versteckt den Infospot-Text
+    }
+}
+
+viewer.addUpdateCallback(checkInfospotVisibility);

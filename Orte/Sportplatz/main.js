@@ -10,6 +10,9 @@ const viewer = new PANOLENS.Viewer({
 
 viewer.add(panoramaImage);
 
+panoramaImage.addEventListener('load', () => {
+    viewer.tweenControlCenter(new THREE.Vector3(5000, -2000, -2500),0);
+});
 
 /*Menu*/
 
