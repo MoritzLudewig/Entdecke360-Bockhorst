@@ -6,6 +6,8 @@ const imageContainer = document.querySelector(".image-container");
 const viewer = new PANOLENS.Viewer({
     container: imageContainer,
     controlBar: false,
+    reverseDragging: false,
+    autoHideInfospot: false,
 });
 
 viewer.add(panoramaImage);
